@@ -6,7 +6,11 @@
     </head>
     <body>
         <h1>CODEQUEST ARENA</h1>
-        <canvas id="gameCanvas">
+        <canvas id="gameCanvas"> </canvas>
+        <script src="js.js">
+            document.getElementById('gameCanvas').width = window.innerWidth;
+            getContext('2d').scale(window.devicePixelRatio, window.devicePixelRatio);
+        </script>
         
     </body>
 </html>
